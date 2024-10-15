@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nepal Trekking & Travel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Header */
+        header {
+            background: url('header-image.jpg') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Section - Tours */
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .tours {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .tour-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            margin: 1rem;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tour-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .tour-card h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .tour-card p {
+            font-size: 1rem;
+        }
+
+        .tour-card button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Services */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            width: 30%;
+            padding: 1rem;
+            background-color: #eee;
+            margin: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trekking Packages</a></li>
+            <li><a href="#">Bus & Car Ticketing</a></li>
+            <li><a href="#">Flight Booking</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Explore Nepal: Treks, Tours & Adventures</h1>
+    </header>
+
+    <!-- Tour Packages Section -->
+    <section class="section" id="tours">
+        <h2>Popular Trekking Packages</h2>
+        <div class="tours">
+            <div class="tour-card">
+                <img src="everest-base-camp.jpg" alt="Everest Base Camp Trek">
+                <h3>Everest Base Camp Trek</h3>
+                <p>14 Days - Discover the majestic Himalayas and reach the base of the highest mountain in the world.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="tour-card">
+                <img src="annapurna-circuit.jpg" alt="Annapurna Circuit Trek">
+                <h3>Annapurna Circuit Trek</h3>
+                <p>12 Days - Experience diverse landscapes, cultural heritage, and stunning mountain views.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="tour-card">
+                <img src="langtang-valley.jpg" alt="Langtang Valley Trek">
+                <h3>Langtang Valley Trek</h3>
+                <p>8 Days - Explore the hidden beauty of Langtang and enjoy the rich biodiversity of the region.</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Bus & Car Ticketing</h3>
+                <p>Book comfortable transportation across Nepal with our bus and car ticketing system.</p>
+            </div>
+            <div class="service">
+                <h3>International Flight Booking</h3>
+                <p>Get the best deals on international flights and plan your global adventures.</p>
+            </div>
+            <div class="service">
+                <h3>Travel Insurance</h3>
+                <p>Stay covered during your travels with comprehensive insurance packages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Travel Itinerary. All Rights Reserved.</p>
+	<p>&copy; Contact no.:+977-9851000094.</p>
+
+    </footer>
+
+</body>
+
+</html>
