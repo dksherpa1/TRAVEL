@@ -1,150 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Travel Itinerary</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #333;
-            padding: 1rem;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin: 0 1rem;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Header */
-        header {
-            background: url('header-image.jpg') no-repeat center center/cover;
-            height: 60vh;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        /* Section - Tours */
-        .section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .section h2 {
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
-        }
-
-        .tours {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .tour-card {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            width: 30%;
-            margin: 1rem;
-            padding: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .tour-card img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        .tour-card h3 {
-            font-size: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .tour-card p {
-            font-size: 1rem;
-        }
-
-        .tour-card button {
-            background-color: #5cb85c;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* Services */
-        .services {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .service {
-            width: 30%;
-            padding: 1rem;
-            background-color: #eee;
-            margin: 1rem;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-	        @media (max-width: 768px) {
-        .tours, .services {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .tour-card, .service {
-            width: 90%;
-        }
-    }
-<form action="/search" method="get" class="search-bar">
-    <input type="text" placeholder="Search for treks, tours..." name="query">
-    <button type="submit">Search</button>
-</form>
-
-    </style>
+    <title>Explore Nepal - Travel & Trekking</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Nepal's Beauty</h1>
+            <p>Explore the Himalayas, Kathmandu Valley, and much more.</p>
+            <a href="#trekking" class="btn-primary">Explore Nepal</a>
+            <a href="#booking" class="btn-secondary">Book Tickets</a>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <h2>Popular Destinations</h2>
+        <div class="links-container">
+            <div class="link-item">Everest Base Camp</div>
+            <div class="link-item">Annapurna Circuit</div>
+            <div class="link-item">Langtang Valley</div>
+        </div>
+    </section>
+
+    <!-- Featured Packages -->
+    <section class="featured-packages">
+        <h2>Top Trekking Packages</h2>
+        <div class="package-container">
+            <div class="package-item">
+                <h3>Everest Base Camp</h3>
+                <p>Price: $1200</p>
+                <a href="details.php?package=everest" class="btn-primary">View Details</a>
+            </div>
+            <div class="package-item">
+                <h3>Annapurna Circuit</h3>
+                <p>Price: $1000</p>
+                <a href="details.php?package=annapurna" class="btn-primary">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Travelers Say</h2>
+        <div class="testimonial-container">
+            <p>"The Everest Base Camp trek was a life-changing experience!" - John D.</p>
+            <p>"Annapurna Circuit exceeded my expectations!" - Sarah P.</p>
+        </div>
+    </section>
+
+</body>
 
     <!-- Navigation -->
 	<div id="map"></div>
