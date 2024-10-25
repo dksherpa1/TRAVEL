@@ -173,12 +173,14 @@ Day 3: Visit Kirtipur, Bungamati, and explore local markets and artisan workshop
     <div class="container">
         <h2>What Our Clients Say</h2>
         <div class="testimonial">
+		<img src="tourist1.jpg" alt="Tourist Image" class="round-img">
             <p>"The Everest Base Camp trek was a once-in-a-lifetime experience. The team was fantastic!"</p>
-            <h4>- John Doe, USA</h4>
+            <h4>- Lee Heoung, South Korea</h4>
         </div>
         <div class="testimonial">
+		<img src="tourist2.jpg" alt="Tourist Image" class="round-img">
             <p>"Annapurna Circuit exceeded my expectations. Great guide and well-organized trek!"</p>
-            <h4>- Jane Smith, UK</h4>
+            <h4>- Kim Smith, UK</h4>
         </div>
     </div>
 </section>
@@ -210,6 +212,8 @@ body {
     line-height: 1.8;
     font-size: 16px;
     box-sizing: border-box;
+	background-color: red;
+	color: white;
 }
 
 .container {
@@ -378,6 +382,9 @@ header nav ul li a {
         flex-direction: column; /* Stacks the cards vertically */
         align-items: center;
     }
+	body {
+        background-color: red; /* Ensure red is applied across all screen sizes */
+    }
 	#hero h2 {
         font-size: 2rem;
     }
@@ -407,13 +414,23 @@ footer {
     padding: 50px 20px;
     text-align: center;
 }
-
+/* Round image styling */
+.round-img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image is contained properly */
+    margin-bottom: 15px;
+}
 .testimonial {
     background-color: white;
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .testimonial p {
