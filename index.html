@@ -388,6 +388,13 @@ header nav ul li a {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+	.round-img {
+    width: 150px; /* Set the width of the round image */
+    height: 150px; /* Set the height of the round image */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits properly within the circle */
+    margin-bottom: 15px;
+}
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .package-listings {
@@ -437,6 +444,7 @@ footer {
 /* Testimonial styling */
 .testimonial {
     background-color: white;
+	 color: black; /* Ensure text color is black on all devices */
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -449,10 +457,12 @@ footer {
 .testimonial p {
     font-style: italic;
     margin-bottom: 10px;
+	color: black; /* Ensure text color is black */
 }
 
 .testimonial h4 {
     margin-top: 0;
+	color: black; /* Ensure text color is black */
 }
 
         </div>
