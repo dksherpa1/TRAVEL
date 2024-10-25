@@ -169,6 +169,20 @@ Day 3: Visit Kirtipur, Bungamati, and explore local markets and artisan workshop
             <p>We are a leading travel agency in Nepal offering the best trekking and cultural tour experiences. With over 10 years of experience, we ensure your adventure in Nepal is unforgettable.</p>
         </div>
     </section>
+	<section id="testimonials">
+    <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"The Everest Base Camp trek was a once-in-a-lifetime experience. The team was fantastic!"</p>
+            <h4>- John Doe, USA</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Annapurna Circuit exceeded my expectations. Great guide and well-organized trek!"</p>
+            <h4>- Jane Smith, UK</h4>
+        </div>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer>
@@ -193,7 +207,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
@@ -205,8 +220,12 @@ body {
 
 h1, h2, h3 {
     text-align: center;
+    line-height: 1.2;
 }
-
+p {
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+}
 a {
     text-decoration: none;
     color: #fff;
@@ -216,12 +235,15 @@ a.btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ff5722;
+    color: white;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: background-color 0.3s ease; transform 0.2s;
 }
 
 a.btn:hover {
     background-color: #e64a19;
+    transform: scale(1.05);
 }
 
 /* Header Styles */
@@ -379,6 +401,28 @@ footer {
     padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
+}
+#testimonials {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial h4 {
+    margin-top: 0;
 }
 
         </div>
