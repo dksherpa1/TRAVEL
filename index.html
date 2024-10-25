@@ -212,8 +212,12 @@ body {
     line-height: 1.8;
     font-size: 16px;
     box-sizing: border-box;
-	background-color: red;
+    background-color: red;
 	color: white;
+}@media (max-width: 768px) {
+    body {
+        background-color: red; /* Ensure red is applied across all screen sizes */
+    }
 }
 
 .container {
@@ -416,12 +420,13 @@ footer {
 }
 /* Round image styling */
 .round-img {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px;
+    width: 150px; /* Set the width of the round image */
+    height: 150px; /* Set the height of the round image */
     border-radius: 50%; /* Makes the image round */
-    object-fit: cover; /* Ensures the image is contained properly */
+    object-fit: cover; /* Ensures the image fits properly within the circle */
     margin-bottom: 15px;
 }
+/* Testimonial styling */
 .testimonial {
     background-color: white;
     padding: 20px;
