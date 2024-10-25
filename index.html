@@ -56,33 +56,71 @@
             <div class="package">
                 <h3>Everest Base Camp Trek</h3>
                 <img src="everest-base-camp.jpg" alt="Everest Base Camp Trek" width="600" height="400">
-		<p> Overview: The Everest Base Camp Trek is a legendary journey to the base of the world’s tallest mountain, Mount Everest (8,848 meters). This trek offers an unparalleled experience, taking you through breathtaking landscapes of the Himalayas, beautiful Sherpa villages, lush rhododendron forests, and Buddhist monasteries. It's a once-in-a-lifetime adventure that brings you face-to-face with some of the highest peaks on Earth, including Everest, Lhotse, and Ama Dablam.
+		   <summary>Overview</summary> 
+		    <p>The Everest Base Camp Trek is a legendary journey to the base 
+			of the world’s tallest mountain, Mount Everest (8,848 meters). 
+			This trek offers an unparalleled experience, taking you through 
+			breathtaking landscapes of the Himalayas, beautiful Sherpa villages, 
+			lush rhododendron forests, and Buddhist monasteries. It's a once-in-a-lifetime 
+			adventure that brings you face-to-face with some of the highest peaks on Earth, i
+			ncluding Everest, Lhotse, and Ama Dablam. </p>
 
+ <!-- Expandable Highlights Section -->
+    <details>
 <p><strong>Highlights:</strong></p>
 
-<ul>Experience the majestic beauty of the Himalayas with views of Everest, Lhotse, and Nuptse.
-Trek through the Sagarmatha National Park, a UNESCO World Heritage Site.
-Visit the Sherpa capital, Namche Bazaar, a cultural hub filled with vibrant local life.
-Stop at Tengboche Monastery, the spiritual center of the Khumbu region.
-Reach Everest Base Camp (5,364 meters) and witness the grandeur of the Khumbu Icefall.
-Hike to Kala Patthar (5,545 meters) for the best panoramic sunrise view of Mount Everest.
-Key Details:</ul>
+<ul>
+	<li>Experience the majestic beauty of the Himalayas with views of Everest, Lhotse, and Nuptse.</li>
+	<li>Trek through the Sagarmatha National Park, a UNESCO World Heritage Site.
+	Visit the Sherpa capital, Namche Bazaar, a cultural hub filled with vibrant local life.
+	Stop at Tengboche Monastery, the spiritual center of the Khumbu region.
+	Reach Everest Base Camp (5,364 meters) and witness the grandeur of the Khumbu Icefall.
+	Hike to Kala Patthar (5,545 meters) for the best panoramic sunrise view of Mount Everest.
+	Key Details:</li>
+</ul>
+    </details>	  
+		    
+<!-- Expandable Duration Section -->
+    <details>
+<strong>Duration:</strong> 
+	<p>14 Days</p>
+    </details> 
 
-<p><strong>Duration:</strong> 14 Days</p>
-<p><strong>Difficulty Level:</strong> Challenging</p>
-<p><strong>Best Season:</strong> March-May, September-November</p>
-<p><strong>Altitude Range:</strong> 2,860 meters (Lukla) to 5,545 meters (Kala Patthar)</p>
-<p><strong>Price:</strong> $1200 (Includes accommodation, guide, permits, and meals during the trek)</p>
-<p><strong>Itinerary Summary:</strong></p>
+ <!-- Expandable Difficulty Level Section -->
+    <details>
+<summary>Difficulty Level</summary> 
+	    <p>Challenging</p>
+    </details>
+		    
+<details>
+        <summary>Best Season</summary>
+        <p>March-May, September-November</p>
+    </details>
 
-Day 1: Flight from Kathmandu to Lukla, trek to Phakding
-Day 2-3: Phakding to Namche Bazaar (Acclimatization Day at Namche)
-Day 4-6: Trek to Tengboche and Dingboche
-Day 7-9: Dingboche to Lobuche, Gorak Shep, and Everest Base Camp
-Day 10-12: Hike to Kala Patthar and descent to Pheriche
-Day 13-14: Return to Lukla and fly back to Kathmandu </p>
-		<p>Duration: 14 Days</p>
-                <p>Price: $1200</p>
+		    <!-- Expandable Altitude Range Section -->
+    <details>
+        <summary>Altitude Range</summary>
+        <p>2,860 meters (Lukla) to 5,545 meters(Kala Patthar)</p>
+    </details>
+
+<!-- Expandable Price Section -->
+    <details>
+        <summary>Price</summary>
+        <p>$1200 (Includes accommodation, guide, permits, and meals)</p>
+    </details>
+		    
+<!-- Expandable Itinerary Summary Section -->
+    <details>
+        <summary>Itinerary Summary</summary>
+        <p>Day 1: Flight from Kathmandu to Lukla, trek to Phakding
+	Day 2-3: Phakding to Namche Bazaar (Acclimatization Day at Namche)
+	Day 4-6: Trek to Tengboche and Dingboche
+	Day 7-9: Dingboche to Lobuche, Gorak Shep, and Everest Base Camp
+	Day 10-12: Hike to Kala Patthar and descent to Pheriche
+	Day 13-14: Return to Lukla and fly back to Kathmandu </p>
+        
+    </details>
+
                 <a href="#" class="btn">Book Now</a>
             </div>
             <div class="package">
@@ -369,6 +407,33 @@ header nav ul li a {
     .package img {
         margin: 0 auto;
     }
+details {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 0;
+    list-style: none;
+}
+
+summary::marker {
+    content: "▶ "; /* Custom arrow for summary */
+    font-size: 1.2em;
+}
+
+details[open] summary::marker {
+    content: "▼ "; /* Custom arrow when open */
+}
+
+details p, details ul {
+    margin-top: 10px;
+}
 
 /* Contact Form */
 #contact form {
@@ -439,7 +504,7 @@ footer {
 /* Testimonial styling */
 .testimonial {
     background-color: white;
-	 color: black; /* Ensure text color is black on all devices */
+    color: black; /* Ensure text color is black on all devices */
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
