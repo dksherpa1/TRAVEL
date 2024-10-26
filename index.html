@@ -31,7 +31,8 @@
                 </ul>
         <div class="contact">
 		<a href="https://wa.me/9779851000094?text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services.">
-    Contact us: +977 9851000094
+			<i class="fab fa-whatsapp"></i> Contact us on WhatsApp: +977 9851000094
+    </a>
 </a>
 
 	</div>
@@ -331,12 +332,24 @@ header nav ul li a {
 }
 /* Contact Section Styling */
 .contact a {
-    color: #000; 
+ display: flex;
+	align-items: center;
+    color: black; 
     text-decoration: none; 
     font-weight: bold;
     margin-right: 20px; 
+	margin-bottom: 10px;
     float: right; 
 }
+.contact a i {
+    margin-right: 10px;
+    font-size: 20px; /* Adjust the size */
+}
+
+.contact a:hover {
+    color: #4CAF50; /* Add hover effect if needed */
+}
+	
 /* Hero Section */
 #hero {
     background-image:url('hero-image.jpg');
