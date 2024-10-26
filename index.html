@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="keywords" content="Nepal trekking, Everest Base Camp, Annapurna Circuit, Nepal travel, adventure tours, cultural tours">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore Nepal with our best trekking and travel packages, including Everest Base Camp, Annapurna Circuit, and cultural tours.">
     <meta name="travel itinerary trekking" content="Nepal trekking, Everest Base Camp, Annapurna Circuit, cultural tours, Nepal travel packages">
@@ -10,7 +11,6 @@
     <meta property="og:image" content="hero-image.jpg">
     <meta property="og:url" content="http://www.travelitinerary.com.np">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nepal Trekking & Travel</title>
     <link rel="stylesheet" href="styles.css">
@@ -56,7 +56,7 @@
             <div class="package">
                 <h3>Everest Base Camp Trek</h3>
                 <img src="everest-base-camp.jpg" alt="Everest Base Camp Trek" width="600" height="400">
-		   <summary>Overview</summary> 
+		   <h4>Overview</h4> 
 		    <p>The Everest Base Camp Trek is a legendary journey to the base 
 			of the world’s tallest mountain, Mount Everest (8,848 meters). 
 			This trek offers an unparalleled experience, taking you through 
@@ -219,12 +219,12 @@ Day 3: Visit Kirtipur, Bungamati, and explore local markets and artisan workshop
     <div class="container">
         <h2>What Our Clients Say</h2>
         <div class="testimonial">
-		<img src="tourist1.jpg" alt="Tourist Image" class="round-img">
+		<img src="tourist1.jpg" alt="Tourist Image" class="testimonial-img">
             <p>"The Everest Base Camp trek was a once-in-a-lifetime experience. The team was fantastic!"</p>
             <h4>- Lee Heoung, South Korea</h4>
         </div>
         <div class="testimonial">
-		<img src="tourist2.jpg" alt="Tourist Image" class="round-img">
+		<img src="tourist2.jpg" alt="Tourist Image" class="testimonial-img">
             <p>"Annapurna Circuit exceeded my expectations. Great guide and well-organized trek!"</p>
             <h4>- Kim Smith, UK</h4>
         </div>
@@ -502,6 +502,16 @@ footer {
 
 
 /* Testimonial styling */
+.testimonial-img {
+    width: 150px; /* Adjust the width to your preference */
+    height: 150px; /* Ensure height is the same as width for a perfect circle */
+    border-radius: 50%; /* This makes the image round */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    max-width: 150px;
+    max-height: 150px;
+}
+
+
 .testimonial {
     background-color: white;
     color: black; /* Ensure text color is black on all devices */
